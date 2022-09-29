@@ -1,0 +1,120 @@
+2022-09-29T15:57:09+00:00 CRITICAL Uncaught Error: Call to undefined function wpb_list_child_pages() in C:\xampp\htdocs\wp-content\themes\happypaws\header.php:17
+Stack trace:
+#0 C:\xampp\htdocs\wp-includes\template.php(770): require_once()
+#1 C:\xampp\htdocs\wp-includes\template.php(716): load_template('C:\\xampp\\htdocs...', true, Array)
+#2 C:\xampp\htdocs\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\xampp\htdocs\wp-content\themes\happypaws\page.php(1): get_header()
+#4 C:\xampp\htdocs\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\wp-content\themes\happypaws\header.php on line 17
+
+2022-09-29T18:12:08+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wp_get_nav_menu_items(), 0 passed in C:\xampp\htdocs\wp-content\themes\happypaws\functions.php on line 34 and at least 1 expected in C:\xampp\htdocs\wp-includes\nav-menu.php:687
+Stack trace:
+#0 C:\xampp\htdocs\wp-content\themes\happypaws\functions.php(34): wp_get_nav_menu_items()
+#1 C:\xampp\htdocs\wp-includes\class-wp-hook.php(309): {closure}(Array)
+#2 C:\xampp\htdocs\wp-includes\plugin.php(191): WP_Hook->apply_filters(Array, Array)
+#3 C:\xampp\htdocs\wp-includes\nav-menu.php(780): apply_filters('wp_get_nav_menu...', Array, Object(WP_Term), Array)
+#4 C:\xampp\htdocs\wp-includes\nav-menu-template.php(151): wp_get_nav_menu_items(Object(WP_Term), Array)
+#5 C:\xampp\htdocs\wp-content\themes\happypaws\header.php(18): wp_nav_menu(Object(stdClass))
+#6 C:\xampp\htdocs\wp-includes\template.php(770): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\wp-includes\template.php(716): load_template('C:\\xampp\\htdocs...', true, Array)
+#8 C:\xampp\htdocs\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#9 C:\xampp\htdocs\wp-content\themes\happypaws\page.php(1): get_header()
+#10 C:\xampp\htdocs\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\index.php(17): require('C:\\xampp\\htdocs...')
+#13 {main}
+  thrown in C:\xampp\htdocs\wp-includes\nav-menu.php on line 687
+
+2022-09-29T18:20:10+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wp_get_nav_menu_items(), 0 passed in C:\xampp\htdocs\wp-content\themes\happypaws\functions.php on line 34 and at least 1 expected in C:\xampp\htdocs\wp-includes\nav-menu.php:687
+Stack trace:
+#0 C:\xampp\htdocs\wp-content\themes\happypaws\functions.php(34): wp_get_nav_menu_items()
+#1 C:\xampp\htdocs\wp-includes\class-wp-hook.php(309): {closure}(Array)
+#2 C:\xampp\htdocs\wp-includes\plugin.php(191): WP_Hook->apply_filters(Array, Array)
+#3 C:\xampp\htdocs\wp-includes\nav-menu.php(780): apply_filters('wp_get_nav_menu...', Array, Object(WP_Term), Array)
+#4 C:\xampp\htdocs\wp-includes\nav-menu-template.php(151): wp_get_nav_menu_items(Object(WP_Term), Array)
+#5 C:\xampp\htdocs\wp-content\themes\happypaws\header.php(18): wp_nav_menu(Object(stdClass))
+#6 C:\xampp\htdocs\wp-includes\template.php(770): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\wp-includes\template.php(716): load_template('C:\\xampp\\htdocs...', true, Array)
+#8 C:\xampp\htdocs\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#9 C:\xampp\htdocs\wp-content\themes\happypaws\page.php(1): get_header()
+#10 C:\xampp\htdocs\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\index.php(17): require('C:\\xampp\\htdocs...')
+#13 {main}
+  thrown in C:\xampp\htdocs\wp-includes\nav-menu.php on line 687
+
+2022-09-29T18:20:23+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wp_get_nav_menu_items(), 0 passed in C:\xampp\htdocs\wp-content\themes\happypaws\functions.php on line 34 and at least 1 expected in C:\xampp\htdocs\wp-includes\nav-menu.php:687
+Stack trace:
+#0 C:\xampp\htdocs\wp-content\themes\happypaws\functions.php(34): wp_get_nav_menu_items()
+#1 C:\xampp\htdocs\wp-includes\class-wp-hook.php(309): {closure}(Array)
+#2 C:\xampp\htdocs\wp-includes\plugin.php(191): WP_Hook->apply_filters(Array, Array)
+#3 C:\xampp\htdocs\wp-includes\nav-menu.php(780): apply_filters('wp_get_nav_menu...', Array, Object(WP_Term), Array)
+#4 C:\xampp\htdocs\wp-admin\includes\nav-menu.php(1155): wp_get_nav_menu_items(Object(WP_Term), Array)
+#5 C:\xampp\htdocs\wp-admin\nav-menus.php(424): wp_nav_menu_update_menu_items(17, 'Top Menu')
+#6 {main}
+  thrown in C:\xampp\htdocs\wp-includes\nav-menu.php on line 687
+
+2022-09-29T18:26:54+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wp_get_nav_menu_items(), 0 passed in C:\xampp\htdocs\wp-content\themes\happypaws\header.php on line 25 and at least 1 expected in C:\xampp\htdocs\wp-includes\nav-menu.php:687
+Stack trace:
+#0 C:\xampp\htdocs\wp-content\themes\happypaws\header.php(25): wp_get_nav_menu_items()
+#1 C:\xampp\htdocs\wp-includes\template.php(770): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wp-includes\template.php(716): load_template('C:\\xampp\\htdocs...', true, Array)
+#3 C:\xampp\htdocs\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#4 C:\xampp\htdocs\wp-content\themes\happypaws\page.php(1): get_header()
+#5 C:\xampp\htdocs\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\index.php(17): require('C:\\xampp\\htdocs...')
+#8 {main}
+  thrown in C:\xampp\htdocs\wp-includes\nav-menu.php on line 687
+
+2022-09-29T18:31:14+00:00 CRITICAL Uncaught Error: Call to undefined function nav_menu_item() in C:\xampp\htdocs\wp-content\themes\happypaws\header.php:27
+Stack trace:
+#0 C:\xampp\htdocs\wp-includes\template.php(770): require_once()
+#1 C:\xampp\htdocs\wp-includes\template.php(716): load_template('C:\\xampp\\htdocs...', true, Array)
+#2 C:\xampp\htdocs\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\xampp\htdocs\wp-content\themes\happypaws\page.php(1): get_header()
+#4 C:\xampp\htdocs\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\wp-content\themes\happypaws\header.php on line 27
+
+2022-09-29T18:35:02+00:00 CRITICAL syntax error, unexpected token "}", expecting ";" in C:\xampp\htdocs\wp-content\themes\happypaws\functions.php on line 36
+
+2022-09-29T18:35:02+00:00 CRITICAL syntax error, unexpected token "}", expecting ";" in C:\xampp\htdocs\wp-content\themes\happypaws\functions.php on line 36
+
+2022-09-29T18:40:13+00:00 CRITICAL Uncaught Error: Call to undefined function nav_menu_item() in C:\xampp\htdocs\wp-content\themes\happypaws\header.php:27
+Stack trace:
+#0 C:\xampp\htdocs\wp-includes\template.php(770): require_once()
+#1 C:\xampp\htdocs\wp-includes\template.php(716): load_template('C:\\xampp\\htdocs...', true, Array)
+#2 C:\xampp\htdocs\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\xampp\htdocs\wp-content\themes\happypaws\page.php(1): get_header()
+#4 C:\xampp\htdocs\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\wp-content\themes\happypaws\header.php on line 27
+
+2022-09-29T18:45:57+00:00 CRITICAL Uncaught Error: Call to undefined function apply_filter() in C:\xampp\htdocs\wp-content\themes\happypaws\functions.php:37
+Stack trace:
+#0 C:\xampp\htdocs\wp-settings.php(566): include()
+#1 C:\xampp\htdocs\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\index.php(17): require('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\wp-content\themes\happypaws\functions.php on line 37
+
+2022-09-29T18:45:58+00:00 CRITICAL Uncaught Error: Call to undefined function apply_filter() in C:\xampp\htdocs\wp-content\themes\happypaws\functions.php:37
+Stack trace:
+#0 C:\xampp\htdocs\wp-settings.php(566): include()
+#1 C:\xampp\htdocs\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\index.php(17): require('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\wp-content\themes\happypaws\functions.php on line 37
+

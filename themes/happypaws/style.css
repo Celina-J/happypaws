@@ -17,8 +17,55 @@ Text Domain: happypaws
 body{
 font-family: 'Montserrat', sans-serif;
 background-color: var(--white);
+color: var(--text);
+max-width: 1400px;
+margin: auto;
 }
 
 h1{ 
     font-family: 'Libre Baskerville', serif;
 }
+
+ul {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--text);
+}
+
+/* ---------Navigationsbar--------- */
+
+.navigation-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-title-navbar{
+    display: flex;
+    justify-content: center;
+}
+
+.menu-left-main-menu-container{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.menu-right-main-menu-container{
+    text-align: right;
+}
+
+.menu-left-main-menu-container > ul,
+.menu-right-main-menu-container > ul{
+    display: flex;
+    font-size: 1.2em;
+}
+
+.menu-right-main-menu-container > ul > li,
+.menu-left-main-menu-container > ul > li{
+    padding: 0 1em;
+}
+
+
+
