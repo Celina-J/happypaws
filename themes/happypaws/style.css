@@ -38,13 +38,21 @@ a{
 /* ---------Navigationsbar--------- */
 
 .navigation-container{
-    display: flex;
+    display: grid;
     justify-content: space-between;
+    grid-template-columns: 2fr 1fr 2fr;
+    align-items: center;
+    height: 80px;
 }
 
+.navigation-container > * {
+    height: 100%;
+    align-items: center;
+}
+
+
 .site-title-navbar{
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 
 .menu-left-main-menu-container{
@@ -53,18 +61,68 @@ a{
 }
 
 .menu-right-main-menu-container{
-    text-align: right;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .menu-left-main-menu-container > ul,
 .menu-right-main-menu-container > ul{
     display: flex;
     font-size: 1.2em;
+    align-items: center;
 }
 
 .menu-right-main-menu-container > ul > li,
 .menu-left-main-menu-container > ul > li{
-    padding: 0 1em;
+    padding: 0.3em 1em;
+    
+}
+
+.menu-right-main-menu-container > ul > li:hover,
+.menu-left-main-menu-container > ul > li:hover{
+    font-weight: bolder;
+}
+
+
+li:has(.sub-menu):hover .sub-menu{
+    display: block;
+}
+
+li:has(.sub-menu){
+    position: relative;
+    
+}
+
+.menu{
+    height: 100%;
+}
+
+.sub-menu{
+    font-weight: 400;
+    margin-top: 0.3em;
+    box-shadow: #ddd 4px 4px 8px;
+    padding: 0;
+    background-color: var(--white);
+    z-index: 100;
+    display: none;
+    position: absolute;
+    border: solid 1px #ddd;
+    border-radius: 4px;
+}
+
+
+
+.sub-menu > li{
+    padding: 0.5em 1em;
+    border-bottom: solid 1px #ddd;
+}
+
+.sub-menu > li:hover{
+    background-color: #ddd;
+}
+
+.sub-menu > li:last-child{
+    border-bottom: none;
 }
 
 

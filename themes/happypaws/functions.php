@@ -5,10 +5,12 @@ function mytheme_add_woocommerce_support() {
 }
 add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
 
-function add_style_script() {
+
+function add_scripts() {
     wp_enqueue_style( 'style', get_stylesheet_directory_uri() . '/style.css', false );
+    wp_enqueue_script( 'navbar-script', get_template_directory_uri() . '/js/navbar.js', array(), '1.0.0', true );
 }
-add_action( 'wp_enqueue_scripts', 'add_style_script' );
+add_action( 'wp_enqueue_scripts', 'add_scripts' );
 
 
 function google_fonts() {
