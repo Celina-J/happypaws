@@ -1,0 +1,30 @@
+.footer-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-top: 2em;
+    color: var(--white);
+    background-color: var(--dark-theme-color);
+}
+
+.footer-container a{
+    color: var(--white);
+}
+
+.footer-container a:hover{
+    font-weight: bold;
+}
+
+.footer-menu-title{
+    font-size: 1.1em;
+}
+
+.info-footer-menu > .menu-info-footer-menu-container > ul,
+.navigate-footer-menu > .menu-navigate-footer-menu-container > ul{
+    padding: 0;
+}
+
+.info-footer-menu > .menu-info-footer-menu-container > ul > li,
+.navigate-footer-menu > .menu-navigate-footer-menu-container > ul > li{
+    padding: .5em 0;
+}

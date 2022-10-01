@@ -9,6 +9,7 @@ add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
 function add_scripts() {
     wp_enqueue_style( 'style', get_stylesheet_directory_uri() . '/style.css', false );
     wp_enqueue_style( 'navbar-style', get_stylesheet_directory_uri() . '/styles/navbar.css', false );
+    wp_enqueue_style( 'footer-style', get_stylesheet_directory_uri() . '/styles/footer.css', false );
     wp_enqueue_script( 'navbar-script', get_template_directory_uri() . '/js/navbar.js', array(), '1.0.0', true );
 }
 add_action( 'wp_enqueue_scripts', 'add_scripts' );
@@ -27,7 +28,8 @@ function register_menus() {
         array(
             'right-main-menu' => 'Right Main Menu',
             'left-main-menu' => 'Left Main Menu',
-            'footer-menu' => 'Footer Menu',
+            'navigate-footer-menu' => 'Navigate Footer Menu',
+            'info-footer-menu' => 'Info Footer Menu',
         )
     ); 
 }
