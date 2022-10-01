@@ -1,19 +1,9 @@
-/* const menus = Array.from(document.getElementsByClassName('menu'));
-console.log(menus);
+const  navbarCart = document.querySelector('#menu-item-55').children[0];
+const navbarSearch = document.querySelector('#menu-item-57').children[0];
 
-menus.forEach(menu => {
-    Array.from(menu.children).forEach(child => {
-        
-        child.addEventListener('mouseenter', (e) => {
-            let subMenu = e.target.querySelector('.sub-menu');
-            if (!subMenu) return;
-            subMenu.style.visibility = 'visible';
-        });
-        
-        child.addEventListener('mouseleave', (e) => {
-            let subMenu = e.target.querySelector('.sub-menu');
-            if (!subMenu) return;
-            subMenu.style.visibility = 'hidden';
-        });
-    })
-}); */
+
+navbarCart.innerHTML = '<div class="navbar-icon"><i class="bi bi-handbag"></i></div>';
+navbarSearch.innerHTML = '<div class="navbar-icon"><i class="bi bi-search"></i></div>';
+
+
+

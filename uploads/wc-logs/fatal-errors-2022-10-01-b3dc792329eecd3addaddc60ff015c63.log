@@ -1,0 +1,42 @@
+2022-10-01T12:10:47+00:00 CRITICAL syntax error, unexpected end of file, expecting "elseif" or "else" or "endif" in C:\xampp\htdocs\wp-content\themes\happypaws\header.php on line 43
+
+2022-10-01T12:22:24+00:00 CRITICAL Uncaught Error: Call to a member function getElementById() on null in C:\xampp\htdocs\wp-content\themes\happypaws\header.php:16
+Stack trace:
+#0 C:\xampp\htdocs\wp-includes\template.php(770): require_once()
+#1 C:\xampp\htdocs\wp-includes\template.php(716): load_template('C:\\xampp\\htdocs...', true, Array)
+#2 C:\xampp\htdocs\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\xampp\htdocs\wp-content\themes\happypaws\page.php(1): get_header()
+#4 C:\xampp\htdocs\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\wp-content\themes\happypaws\header.php on line 16
+
+2022-10-01T12:29:20+00:00 CRITICAL syntax error, unexpected token "[", expecting identifier or variable or "{" or "$" in C:\xampp\htdocs\wp-content\themes\happypaws\header.php on line 19
+
+2022-10-01T12:29:27+00:00 CRITICAL syntax error, unexpected single-quoted string "title", expecting identifier or variable or "{" or "$" in C:\xampp\htdocs\wp-content\themes\happypaws\header.php on line 19
+
+2022-10-01T12:30:49+00:00 CRITICAL Uncaught Error: Call to undefined function is_logged_in() in C:\xampp\htdocs\wp-content\themes\happypaws\header.php:17
+Stack trace:
+#0 C:\xampp\htdocs\wp-includes\template.php(770): require_once()
+#1 C:\xampp\htdocs\wp-includes\template.php(716): load_template('C:\\xampp\\htdocs...', true, Array)
+#2 C:\xampp\htdocs\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\xampp\htdocs\wp-content\themes\happypaws\page.php(1): get_header()
+#4 C:\xampp\htdocs\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\wp-content\themes\happypaws\header.php on line 17
+
+2022-10-01T12:31:15+00:00 CRITICAL Uncaught Error: Call to undefined function is_logged_in() in C:\xampp\htdocs\wp-content\themes\happypaws\header.php:17
+Stack trace:
+#0 C:\xampp\htdocs\wp-includes\template.php(770): require_once()
+#1 C:\xampp\htdocs\wp-includes\template.php(716): load_template('C:\\xampp\\htdocs...', true, Array)
+#2 C:\xampp\htdocs\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\xampp\htdocs\wp-content\themes\happypaws\page.php(1): get_header()
+#4 C:\xampp\htdocs\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\wp-content\themes\happypaws\header.php on line 17
+
