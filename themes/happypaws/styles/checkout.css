@@ -1,0 +1,48 @@
+.col2-set{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-subtotal,
+.order-total,
+.cart-list-item,
+.tax-total,
+.cart-discount,
+.shipping-fee{
+    display: flex;
+    justify-content: space-between;
+    padding: .5em 0;
+}
+
+
+.cart-subtotal,
+.order-total {
+    border-top: solid 1px #ddd;
+}
+
+.input-text {
+    padding: .7em;
+}
+
+.wc_payment_methods, 
+.place-order, 
+.woocommerce-checkout #payment div.payment_box,
+.woocommerce-checkout #payment div.form-row, 
+.woocommerce-checkout #payment ul.payment_methods {
+    background-color: var(--white);
+    padding: 0;
+}
+
+.woocommerce-checkout #payment div.payment_box::before {
+    display: none;
+}
+
+.woocommerce-checkout #payment ul.payment_methods li input{
+    display: inline-block !important;
+}
+
+.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt {
+    background-color: var(--dark-theme-color);
+}
+
+

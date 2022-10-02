@@ -1,0 +1,26 @@
+2022-10-02T13:39:34+00:00 CRITICAL Uncaught Error: Call to undefined function WC_Shipping_Method() in C:\xampp\htdocs\wp-content\themes\happypaws\woocommerce\checkout\review-order.php:76
+Stack trace:
+#0 C:\xampp\htdocs\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 C:\xampp\htdocs\wp-content\plugins\woocommerce\includes\wc-template-functions.php(2333): wc_get_template('checkout/review...', Array)
+#2 C:\xampp\htdocs\wp-includes\class-wp-hook.php(307): woocommerce_order_review('')
+#3 C:\xampp\htdocs\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#4 C:\xampp\htdocs\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\wp-content\themes\happypaws\woocommerce\checkout\form-checkout.php(46): do_action('woocommerce_che...')
+#6 C:\xampp\htdocs\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(313): wc_get_template('checkout/form-c...', Array)
+#8 C:\xampp\htdocs\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(67): WC_Shortcode_Checkout::checkout()
+#9 C:\xampp\htdocs\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_Checkout::output('')
+#10 C:\xampp\htdocs\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(95): WC_Shortcodes::shortcode_wrapper(Array, '')
+#11 C:\xampp\htdocs\wp-includes\shortcodes.php(356): WC_Shortcodes::checkout('', '', 'woocommerce_che...')
+#12 [internal function]: do_shortcode_tag(Array)
+#13 C:\xampp\htdocs\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_ch...')
+#14 C:\xampp\htdocs\wp-includes\class-wp-hook.php(307): do_shortcode('[woocommerce_ch...')
+#15 C:\xampp\htdocs\wp-includes\plugin.php(191): WP_Hook->apply_filters('[woocommerce_ch...', Array)
+#16 C:\xampp\htdocs\wp-includes\post-template.php(253): apply_filters('the_content', '<!-- wp:shortco...')
+#17 C:\xampp\htdocs\wp-content\themes\happypaws\page.php(4): the_content()
+#18 C:\xampp\htdocs\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#19 C:\xampp\htdocs\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#20 C:\xampp\htdocs\index.php(17): require('C:\\xampp\\htdocs...')
+#21 {main}
+  thrown in C:\xampp\htdocs\wp-content\themes\happypaws\woocommerce\checkout\review-order.php on line 76
+
