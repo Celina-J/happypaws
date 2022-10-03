@@ -1,0 +1,46 @@
+
+
+.product-cart-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+    border-bottom: 1px solid #ddd;
+}
+
+.product-col1-container{
+    display: flex;
+}
+
+.product-col2-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-col3-container{
+
+}
+
+.product-remove{
+    font-size: 2em;
+}
+
+.woocommerce a.remove{
+    font-weight: 400;
+    color: var(--text) !important;
+}
+
+.product-thumbnail{
+    max-width: 150px;
+}
+
+.product-name-price{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.product-subtotal{
+    font-weight: bold;
+}
