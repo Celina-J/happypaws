@@ -37,5 +37,13 @@ function register_menus() {
 }
 add_action( 'init', 'register_menus' );
 
+//Checkout
+
+function ace_hide_shipping_title( $label ) {
+	$pos = strpos( $label, ': ' );
+	return substr( $label, ++$pos );
+}
+add_filter( 'woocommerce_cart_shipping_method_full_label', 'ace_hide_shipping_title' );
+
 
 

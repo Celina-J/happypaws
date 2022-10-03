@@ -18,7 +18,12 @@ body{
     margin: 0;
 }
 
+.foo{
+    display: none;
+}
+
 .container{
+padding: 1em;
 font-family: 'Montserrat', sans-serif;
 background-color: var(--white);
 color: var(--text);

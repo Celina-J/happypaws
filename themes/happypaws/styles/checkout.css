@@ -1,6 +1,7 @@
 .col2-set{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .cart-subtotal,
