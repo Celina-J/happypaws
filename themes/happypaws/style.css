@@ -9,11 +9,16 @@ Text Domain: happypaws
 :root {
     --light-theme-color: #BFC7C7;
     --dark-theme-color: #617C7C;
+    --on-hover-btn: #4d6262;
     --text: #222;
     --white: #FFF;
 }
 
 body{
+    margin: 0;
+}
+
+.container{
 font-family: 'Montserrat', sans-serif;
 background-color: var(--white);
 color: var(--text);

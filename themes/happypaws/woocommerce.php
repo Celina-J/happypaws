@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
-    <?php woocommerce_content(); ?>
+<div class="container">
+        <?php woocommerce_content(); ?>
+</div>
 
 <?php get_footer(); ?>
