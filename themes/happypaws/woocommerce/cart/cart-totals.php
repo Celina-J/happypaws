@@ -45,6 +45,13 @@ defined('ABSPATH') || exit;
 
 		<?php do_action('woocommerce_cart_totals_after_shipping'); ?>
 
+		<?php $cart_total = WC()->cart->get_subtotal(); ?>
+
+		<?php
+		 if ( $cart_total < 500) :  ?>
+		<div><b>Handla för <?= 500 - $cart_total?> kr mer för att få fri frakt!</b></div>
+		<?php endif; ?>
+
 		<?php do_action('woocommerce_cart_totals_before_order_total'); ?>
 
 		<div class="order-total">
