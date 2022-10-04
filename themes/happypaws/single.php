@@ -1,7 +1,13 @@
 <?php get_header(); ?>
 
-<div class="container">
-    <?php the_content(); ?>
-</div>
+	<div id="primary" class="news-content">
 
-<?php get_footer(); ?>
+		
+		<?php 
+		the_content(); 
+		?>
+
+	</div>
+
+<?php
+get_footer();

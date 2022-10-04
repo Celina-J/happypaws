@@ -57,7 +57,13 @@ a{
     visibility: hidden;
 }
 
+.align-center{
+    margin: auto;
+}
 
+.fixed-width{
+    max-width: 1400px;
+}
 
 
 
