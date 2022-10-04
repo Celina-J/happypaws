@@ -44,6 +44,20 @@ a{
     color: var(--text);
 }
 
+/* ------Search page------ */
+
+
+.aws-container .aws-show-clear .aws-search-field {
+    padding: 1em;
+    font-size: 1.5em;
+}
+
+
+.aws-container .aws-show-clear .aws-search-field::placeholder{
+    visibility: hidden;
+}
+
+
 
 
 
