@@ -1,0 +1,45 @@
+/* -------Startsida------- */
+
+.home-B1-block{
+    text-align: center;
+    padding: 2em;
+}
+
+.home-B1-btn{
+    padding: 1em 2em;
+    background-color: var(--dark-theme-color);
+    color: var(--white);
+    border-radius: 5px;
+    border: none;
+}
+
+.home-B1-btn:hover{
+    background-color: var(--on-hover-btn);
+}
+
+.top_homepage_block2,
+.bottom_homepage_block2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.top_homepage_block2 > p,
+.bottom_homepage_block2 > p{
+    margin: 0;
+}
+
+.top_homepage_block2 > p,
+.bottom_homepage_block2 > p,
+.left-text-homepage-block2,
+.right-text-homepage-block2 {
+    display: grid;
+    max-width: 1fr;
+}
+
+.right_b2_text,
+.left_b2_text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
