@@ -1,0 +1,80 @@
+2022-10-05T11:39:13+00:00 CRITICAL syntax error, unexpected end of file, expecting "elseif" or "else" or "endif" in C:\xampp\htdocs\wp-content\themes\happypaws\woocommerce.php on line 11
+
+2022-10-05T11:44:57+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Post as array in C:\xampp\htdocs\wp-content\themes\happypaws\woocommerce.php:3
+Stack trace:
+#0 C:\xampp\htdocs\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\wp-content\themes\happypaws\woocommerce.php on line 3
+
+2022-10-05T11:45:09+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Post as array in C:\xampp\htdocs\wp-content\themes\happypaws\woocommerce.php:3
+Stack trace:
+#0 C:\xampp\htdocs\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\wp-content\themes\happypaws\woocommerce.php on line 3
+
+2022-10-05T11:54:30+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Post as array in C:\xampp\htdocs\wp-content\themes\happypaws\woocommerce.php:3
+Stack trace:
+#0 C:\xampp\htdocs\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\wp-content\themes\happypaws\woocommerce.php on line 3
+
+2022-10-05T12:12:08+00:00 CRITICAL Can't use function return value in write context in C:\xampp\htdocs\wp-content\themes\happypaws\woocommerce.php on line 5
+
+2022-10-05T12:15:49+00:00 CRITICAL syntax error, unexpected token ")" in C:\xampp\htdocs\wp-content\themes\happypaws\woocommerce.php on line 5
+
+2022-10-05T12:16:05+00:00 CRITICAL syntax error, unexpected token ")" in C:\xampp\htdocs\wp-content\themes\happypaws\woocommerce.php on line 5
+
+2022-10-05T12:51:03+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function the_field(), 0 passed in C:\xampp\htdocs\wp-content\themes\happypaws\template-parts\blocks\homepage_block2.php on line 7 and at least 1 expected in C:\xampp\htdocs\wp-content\plugins\advanced-custom-fields-pro\includes\api\api-template.php:79
+Stack trace:
+#0 C:\xampp\htdocs\wp-content\themes\happypaws\template-parts\blocks\homepage_block2.php(7): the_field()
+#1 C:\xampp\htdocs\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(390): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(327): acf_render_block(Array, '', true, 6, Object(WP_Block))
+#3 C:\xampp\htdocs\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(307): acf_rendered_block(Array, '', true, 6, Object(WP_Block))
+#4 C:\xampp\htdocs\wp-includes\class-wp-block.php(255): acf_render_block_callback(Array, '', Object(WP_Block))
+#5 C:\xampp\htdocs\wp-includes\blocks.php(902): WP_Block->render()
+#6 C:\xampp\htdocs\wp-includes\blocks.php(940): render_block(Array)
+#7 C:\xampp\htdocs\wp-includes\class-wp-hook.php(307): do_blocks('<!-- wp:cover {...')
+#8 C:\xampp\htdocs\wp-includes\plugin.php(191): WP_Hook->apply_filters('<!-- wp:cover {...', Array)
+#9 C:\xampp\htdocs\wp-includes\rest-api\endpoints\class-wp-rest-posts-controller.php(1811): apply_filters('the_content', '<!-- wp:cover {...')
+#10 C:\xampp\htdocs\wp-includes\rest-api\endpoints\class-wp-rest-posts-controller.php(560): WP_REST_Posts_Controller->prepare_item_for_response(Object(WP_Post), Object(WP_REST_Request))
+#11 C:\xampp\htdocs\wp-includes\rest-api\class-wp-rest-server.php(1143): WP_REST_Posts_Controller->get_item(Object(WP_REST_Request))
+#12 C:\xampp\htdocs\wp-includes\rest-api\class-wp-rest-server.php(990): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/pages/(?...', Array, NULL)
+#13 C:\xampp\htdocs\wp-includes\rest-api.php(519): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#14 C:\xampp\htdocs\wp-includes\rest-api.php(2868): rest_do_request(Object(WP_REST_Request))
+#15 [internal function]: rest_preload_api_request(Array, '/wp/v2/pages/6?...')
+#16 C:\xampp\htdocs\wp-includes\block-editor.php(601): array_reduce(Array, 'rest_preload_ap...', Array)
+#17 C:\xampp\htdocs\wp-admin\edit-form-blocks.php(75): block_editor_rest_api_preload(Array, Object(WP_Block_Editor_Context))
+#18 C:\xampp\htdocs\wp-admin\post.php(187): require('C:\\xampp\\htdocs...')
+#19 {main}
+  thrown in C:\xampp\htdocs\wp-content\plugins\advanced-custom-fields-pro\includes\api\api-template.php on line 79
+
+2022-10-05T12:51:37+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function get_field(), 0 passed in C:\xampp\htdocs\wp-content\themes\happypaws\template-parts\blocks\homepage_block2.php on line 7 and at least 1 expected in C:\xampp\htdocs\wp-content\plugins\advanced-custom-fields-pro\includes\api\api-template.php:20
+Stack trace:
+#0 C:\xampp\htdocs\wp-content\themes\happypaws\template-parts\blocks\homepage_block2.php(7): get_field()
+#1 C:\xampp\htdocs\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(390): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(327): acf_render_block(Array, '', true, 6, Object(WP_Block))
+#3 C:\xampp\htdocs\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(307): acf_rendered_block(Array, '', true, 6, Object(WP_Block))
+#4 C:\xampp\htdocs\wp-includes\class-wp-block.php(255): acf_render_block_callback(Array, '', Object(WP_Block))
+#5 C:\xampp\htdocs\wp-includes\blocks.php(902): WP_Block->render()
+#6 C:\xampp\htdocs\wp-includes\blocks.php(940): render_block(Array)
+#7 C:\xampp\htdocs\wp-includes\class-wp-hook.php(307): do_blocks('<!-- wp:cover {...')
+#8 C:\xampp\htdocs\wp-includes\plugin.php(191): WP_Hook->apply_filters('<!-- wp:cover {...', Array)
+#9 C:\xampp\htdocs\wp-includes\rest-api\endpoints\class-wp-rest-posts-controller.php(1811): apply_filters('the_content', '<!-- wp:cover {...')
+#10 C:\xampp\htdocs\wp-includes\rest-api\endpoints\class-wp-rest-posts-controller.php(560): WP_REST_Posts_Controller->prepare_item_for_response(Object(WP_Post), Object(WP_REST_Request))
+#11 C:\xampp\htdocs\wp-includes\rest-api\class-wp-rest-server.php(1143): WP_REST_Posts_Controller->get_item(Object(WP_REST_Request))
+#12 C:\xampp\htdocs\wp-includes\rest-api\class-wp-rest-server.php(990): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/pages/(?...', Array, NULL)
+#13 C:\xampp\htdocs\wp-includes\rest-api.php(519): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#14 C:\xampp\htdocs\wp-includes\rest-api.php(2868): rest_do_request(Object(WP_REST_Request))
+#15 [internal function]: rest_preload_api_request(Array, '/wp/v2/pages/6?...')
+#16 C:\xampp\htdocs\wp-includes\block-editor.php(601): array_reduce(Array, 'rest_preload_ap...', Array)
+#17 C:\xampp\htdocs\wp-admin\edit-form-blocks.php(75): block_editor_rest_api_preload(Array, Object(WP_Block_Editor_Context))
+#18 C:\xampp\htdocs\wp-admin\post.php(187): require('C:\\xampp\\htdocs...')
+#19 {main}
+  thrown in C:\xampp\htdocs\wp-content\plugins\advanced-custom-fields-pro\includes\api\api-template.php on line 20
+

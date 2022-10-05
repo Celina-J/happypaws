@@ -118,4 +118,15 @@ function block2_homepage() { ?>
     <?php include('template-parts/blocks/homepage_block2.php');
 }
 
+//En funktion jag hittade online som inkluderar content till valfri sida från en annan sida, post id är input
+//Används i woocommerce filen
+function cn_include_content($pid) {
+	$thepageinquestion = get_post($pid);
+	$content = $thepageinquestion->post_content;
+	$content = apply_filters('the_content', $content);
+	echo $content;
+}
+
+
+
 
