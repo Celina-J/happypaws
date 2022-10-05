@@ -37,5 +37,26 @@ function register_menus() {
 }
 add_action( 'init', 'register_menus' );
 
+//Checkout
+
+function ace_hide_shipping_title( $label ) {
+	$pos = strpos( $label, ': ' );
+	return substr( $label, ++$pos );
+}
+add_filter( 'woocommerce_cart_shipping_method_full_label', 'ace_hide_shipping_title' );
+
+
+function my_hide_shipping_when_free_is_available( $rates ) {
+	$free = array();
+	foreach ( $rates as $rate_id => $rate ) {
+		if ( 'free_shipping' === $rate->method_id ) {
+			$free[ $rate_id ] = $rate;
+			break;
+		}
+	}
+	return ! empty( $free ) ? $free : $rates;
+}
+add_filter( 'woocommerce_package_rates', 'my_hide_shipping_when_free_is_available', 100 );
+
 
 

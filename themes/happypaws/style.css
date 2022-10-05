@@ -9,11 +9,21 @@ Text Domain: happypaws
 :root {
     --light-theme-color: #BFC7C7;
     --dark-theme-color: #617C7C;
+    --on-hover-btn: #4d6262;
     --text: #222;
     --white: #FFF;
 }
 
 body{
+    margin: 0;
+}
+
+.foo{
+    display: none;
+}
+
+.container{
+padding: 1em;
 font-family: 'Montserrat', sans-serif;
 background-color: var(--white);
 color: var(--text);
@@ -33,6 +43,20 @@ a{
     text-decoration: none;
     color: var(--text);
 }
+
+/* ------Search page------ */
+
+
+.aws-container .aws-show-clear .aws-search-field {
+    padding: 1em;
+    font-size: 1.5em;
+}
+
+
+.aws-container .aws-show-clear .aws-search-field::placeholder{
+    visibility: hidden;
+}
+
 
 
 

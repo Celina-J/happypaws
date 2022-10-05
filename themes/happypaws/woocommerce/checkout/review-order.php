@@ -73,7 +73,13 @@
 
 		<?php do_action('woocommerce_review_order_before_shipping'); ?>
 
+		
 		<div class="shipping-fee"> <?php wc_cart_totals_shipping_html(); ?> </div>
+		<?php $cart_total = WC()->cart->get_subtotal(); ?>
+		<?php
+		if ($cart_total < 500) :  ?>
+			<div><b>Handla för <?= 500 - $cart_total ?> kr mer för att få fri frakt!</b></div>
+		<?php endif; ?>
 
 		<?php do_action('woocommerce_review_order_after_shipping'); ?>
 

@@ -1,6 +1,7 @@
 .col2-set{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .cart-subtotal,
@@ -41,8 +42,12 @@
     display: inline-block !important;
 }
 
-.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt {
+.woocommerce button.button.alt {
     background-color: var(--dark-theme-color);
+}
+
+.woocommerce button.button.alt:hover {
+    background-color: var(--on-hover-btn);
 }
 
 
