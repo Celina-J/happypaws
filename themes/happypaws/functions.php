@@ -44,8 +44,8 @@ function register_menus()
 }
 add_action('init', 'register_menus');
 
-//Checkout
 
+//Tar bort labeln man matar in i admin gränssnittet i checkout samt cart
 function ace_hide_shipping_title($label)
 {
     $pos = strpos($label, ': ');
@@ -53,7 +53,7 @@ function ace_hide_shipping_title($label)
 }
 add_filter('woocommerce_cart_shipping_method_full_label', 'ace_hide_shipping_title');
 
-
+//Visar enbart free shipping i cart samt checkout om man uppnått fri frakt beloppet
 function my_hide_shipping_when_free_is_available($rates)
 {
     $free = array();
@@ -68,6 +68,7 @@ function my_hide_shipping_when_free_is_available($rates)
 add_filter('woocommerce_package_rates', 'my_hide_shipping_when_free_is_available', 100);
 
 
+//Tar bort titeln i shop pagen
 add_filter('woocommerce_show_page_title', 'bbloomer_hide_shop_page_title');
 
 function bbloomer_hide_shop_page_title($title)
@@ -75,6 +76,27 @@ function bbloomer_hide_shop_page_title($title)
     if (is_shop()) $title = false;
     return $title;
 }
+
+
+function create_posttype() {
+  
+    register_post_type( 'store_locator',
+
+        array(
+            'labels' => array(
+                'name' => __( 'Store locator' ),
+                'singular_name' => __( 'Store' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array('slug' => 'store_locator'),
+            'show_in_rest' => true,
+  
+        )
+    );
+}
+
+add_action( 'init', 'create_posttype' );
 
 
 add_action('acf/init', 'my_acf_blocks_init');
@@ -108,14 +130,25 @@ function my_acf_blocks_init()
                 'keywords'          => array('homepage_block2')
             ));
         }
+
+        if (function_exists('acf_register_block_type')) {
+
+            // Register a block.
+            acf_register_block_type(array(
+                'name'              => 'store_locator',
+                'title'             => __('Store locator'),
+                'description'       => __('A custom post type showing stores location.'),
+                'render_template'   => 'template-parts/blocks/store-locator.php',
+                'category'          => 'formatting',
+                'icon'              => 'welcome-view-site',
+                'keywords'          => array('store_locator')
+            ));
+        }
     }
 }
 
-add_action('woocommerce_after_shop_loop', 'block2_homepage');
-function block2_homepage() { ?>
 
-    <h1>Hejsan från block2</h1>
-    <?php include('template-parts/blocks/homepage_block2.php');
-}
+
+
 
 

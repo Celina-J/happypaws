@@ -43,3 +43,18 @@
     justify-content: center;
     align-items: center;
 }
+
+.stores-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.store-card{
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    border: 1px solid #ddd;
+    border-radius: .5em;
+    padding: 1em;
+}

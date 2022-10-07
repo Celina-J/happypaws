@@ -1,0 +1,12 @@
+2022-10-07T08:16:42+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function " create_post_type" not found or invalid function name in C:\xampp\htdocs\wp-includes\class-wp-hook.php:307
+Stack trace:
+#0 C:\xampp\htdocs\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#1 C:\xampp\htdocs\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\wp-settings.php(598): do_action('init')
+#3 C:\xampp\htdocs\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\wp-includes\class-wp-hook.php on line 307
+
